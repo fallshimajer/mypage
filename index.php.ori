@@ -1,0 +1,48 @@
+<?php
+$nombre = htmlspecialchars($_POST['n1']);
+$apellido = htmlspecialchars($_POST['a1']);
+$rut = htmlspecialchars($_POST['r1']);
+$email = htmlspecialchars($_POST['e1']);
+echo $nombre, ' ', $apellido;
+?>
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<html>
+	<head>
+		<link rel="stylesheet" title="Diseño CSS" type="text/css" href="style.css"/>
+	<title>mail.gedfrey.com</title>
+	<head>
+		<body>
+			<header>
+				<h1>Soporte Gedfrey</h1>
+			</header>
+			<section>
+			<nav>
+				<h1>FAQ</h1>
+				<ul>
+					<li>¿Que es esto?</li>
+					<li>¿Como puedo tener una cuenta de correo?</li>
+					<li>¿A quien reclamo?</li>
+					<li>Nueva cosa</li>
+				</ul>
+			</nav>
+			<article>
+				<h2>Formulario de Atención</h2>
+				<form action="" method="post">
+					<label for="n1">Nombre:</label>
+					<input name="n1" type="text" placeholder="Juan"><br>
+					<label for="a1">Apellido</label>
+					<input name="a1" type="text" placeholder="Perez"><br>
+					<label for="r1">Rut:</label>
+					<input name="r1" type="number" placeholder="18117653"><br>
+					<label for="e1">Correo:</label>
+					<input name="e1" type="email" placeholder="example@test.com"><br>
+					<textarea name="tb1" rows="10" cols="75"></textarea><br>
+					<input type="submit" value="Submit">
+				</form>
+			</article>
+			</section>
+		</body>
+</html>
